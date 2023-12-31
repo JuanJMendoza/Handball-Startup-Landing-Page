@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.feature {
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0, .1);
+}
+
+.player-feature {
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0, .1);
+    background-color: #F6F9F1;
+}
+
+.host-features-section {
+    background-color: #F6F9F1;
+}
+
+.navbar-icon {
+    width: 3em;
+    height: 3em;
+    background-color: #111826ff;
+}
+
+.suggestion-form-section, footer {
+    background-color: #F6F9F1;
+}

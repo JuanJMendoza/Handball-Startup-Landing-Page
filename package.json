@@ -1,0 +1,14 @@
+{
+  "name": "game21",
+  "version": "1.0.0",
+  "description": "Landing page for Game 21, a handball hub for players and tournament hosts.",
+  "main": "index.js",
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Juan Mendoza",
+  "license": "ISC"
+}

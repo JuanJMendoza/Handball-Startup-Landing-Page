@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="/dist/output.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Game 21</title>
+    <!--  Google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-display text-center">
+<!--===============================NAVBAR=============================-->
+<nav class="bg-white border-gray-200 dark:bg-gray-900">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-1">
+        <a href="" class="flex items-center rtl:space-x-reverse">
+            <img src="resources/WorldWideWallball-icon.png" class="navbar-icon h-8" alt="Game 21 Logo"/>
+            <span class="self-center text-xl md:text-2xl font-semibold whitespace-nowrap text-white">Game 21</span>
+        </a>
+        <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-4 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                <li>
+                    <a href="#"
+                       class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Home</a>
+                </li>
+                <li>
+                    <a href="#"
+                       class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Our
+                        Mission</a>
+                </li>
+                <li>
+                    <a href="#"
+                       class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Host
+                        Features</a>
+                </li>
+                <li>
+                    <a href="#"
+                       class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Player
+                        Features</a>
+                </li>
+                <li>
+                    <a href="#"
+                       class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Suggestions</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--===============================JUMBOTRON=============================-->
+<section
+        class="bg-center bg-no-repeat bg-gray-400 bg-blend-multiply bg-cover"
+        style="background-image: url(resources/HandballCourtImage.jpeg);">
+    <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">The
+            Court is Calling.<br/> Are You Ready to Answer?</h1>
+        <p class="mb-8 text-lg font-normal text-white lg:text-xl sm:px-16 lg:px-48">Welcome to Game 21 - The Future
+            of NYC One Wall Handball</p>
+        <p class="mb-8 text-lg font-semibold text-white lg:text-xl sm:px-16 lg:px-48">Coming Soon!</p>
+        <form class="w-full max-w-md mx-auto" action="https://formspree.io/f/xbjnjggk" method="POST">
+            <label for="default-email" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Email
+                sign-up</label>
+            <div class="relative">
+                <div class="absolute inset-y-0 rtl:inset-x-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                         xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+                        <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
+                        <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
+                    </svg>
+                </div>
+                <input type="email" id="default-email" name="email"
+                       class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white focus:ring-blue-500 focus:border-blue-500"
+                       placeholder="Enter your email here..." required>
+                <button type="submit"
+                        class="text-white absolute end-2.5 bottom-2.5 bg-orange-500 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2">
+                    Notify me
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!--===============================ABOUT US=============================-->
+<section>
+    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
+        <h2 class="mb-6 text-3xl font-semibold tracking-tight leading-none text-gray-900">
+            Pioneering NYC’s Handball Future</h2>
+        <p class="mb-8 text-lg font-normal lg:text-xl sm:px-16">At the heart
+            of New York City's vibrant handball community, our team at Game 21 is
+            driven by a passion for the
+            sport and a commitment to innovation. We understand the pulse of NYC's handball scene – its energy, its
+            competitiveness, and its gritty spirit. Our mission is to transform the handball experience in the city,
+            breaking barriers to make it more inclusive, captivating, and enjoyable for all. Join us in sustaining the
+            essence of New York City's five boroughs, where the heart of handball beats with life and excitement.</p>
+    </div>
+</section>
+
+
+<!--==============================HOST FEATURES==============================-->
+<div class="host-features-section py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 md:flex md:items-center md:space-x-10 md:py-20 md:px-24">
+    <div class="basis-1/2 space-y-6 mb-10 md:mr-10">
+        <h2 class="host-features-section-header text-3xl font-semibold">Comprehensive Tools for Seamless Tournament
+            Management</h2>
+        <p class="host-features-section-description">As a tournament host, you play a pivotal role in the handball
+            community. Game 21 is here to streamline your event
+            management process. Our platform combines dynamic event creation and management with a unified calendar to
+            prevent scheduling conflicts, integrated financial tools for efficient handling of fees and prizes, and
+            real-time bracket updates to keep participants and spectators engaged. These features are designed to
+            simplify tournament coordination, enhance player engagement, and elevate the overall experience for everyone
+            involved.</p>
+    </div>
+    <div class="feature-section basis-1/2 space-y-10">
+        <div class="feature bg-white flex flex-col text-sm space-y-1 p-4">
+            <h3 class="feature-heading text-base font-medium">Live Brackets</h3>
+            <p class="feature-subheading text-sm font-light text-gray-500">Real-time updates</p>
+            <p>Engage audiences with live bracket updates and scores, while facilitating instant communication between
+                participants and hosts.</p>
+            <div class="coming-soon w-24 self-center">
+                <p class="coming-soon-text mt-2 text-white text-sm rounded bg-orange-500">Coming Soon</p>
+            </div>
+        </div>
+        <div class="feature bg-white flex flex-col text-sm space-y-1 p-4">
+            <h3 class="feature-heading text-base font-medium">Dynamic Event Creation and Management</h3>
+            <p class="feature-subheading text-sm font-light text-gray-500">Unified Tournament Calendar</p>
+            <p class="feature-description">Effortlessly set up and customize tournaments with a unified calendar
+                to avoid date conflicts, flexible bracket structures, and manage registrations in real-time using our
+                user-friendly interface.</p>
+            <div class="coming-soon w-24 self-center">
+                <p class="coming-soon-text mt-2 text-white text-sm rounded bg-orange-500">Coming Soon</p>
+            </div>
+        </div>
+        <div class="feature bg-white flex flex-col text-sm space-y-1 p-4">
+            <h3 class="feature-heading text-base font-medium">Integrated Financial Tools</h3>
+            <p class="feature-subheading text-sm font-light text-gray-500">Secured Transactions</p>
+            <p class="feature-description">Simplify the handling of entry fees, and prize distributions with our
+                secure, automated financial system. Track all transactions in one place, ensuring efficient transaction
+                tracking.</p>
+            <div class="coming-soon w-24 self-center">
+                <p class="coming-soon-text mt-2 text-white text-sm rounded bg-orange-500">Coming Soon</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--=============================PLAYER FEATURES===============================-->
+<div class="player-features-section py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 flex flex-col-reverse md:flex-row md:items-center md:space-x-10 md:py-20 md:px-24">
+    <div class="player-feature-section basis-1/2 space-y-6">
+        <div class="player-feature flex flex-col text-sm space-y-1 p-4">
+            <h3 class="player-feature-heading text-base font-medium">Tournament Central</h3>
+            <p class="player-feature-subheading text-sm font-light text-gray-500">Seamless Tournament Experience</p>
+            <p class="player-feature-description">Effortlessly find and register for tournaments. Stay engaged with
+                live updates, brackets, and notifications. Utilize the community feature to request or receive someone
+                as a partner for a doubles tournament. Fully immerse yourself in the NYC handball scene.</p>
+            <div class="coming-soon w-24 self-center">
+                <p class="coming-soon-text mt-2 text-white text-sm rounded bg-orange-500">Coming Soon</p>
+            </div>
+        </div>
+        <div class="player-feature flex flex-col text-sm space-y-1 p-4">
+            <h3 class="player-feature-heading text-base font-medium">Athlete’s Dashboard</h3>
+            <p class="player-feature-subheading text-sm font-light text-gray-500">Personal Metric Tracking</p>
+            <p class="player-feature-description">Elevate your game with a personalized player profile. Monitor your
+                win/loss ratios and annual tournament earnings, all in a single, user-friendly dashboard.</p>
+            <div class="coming-soon w-24 self-center">
+                <p class="coming-soon-text mt-2 text-white text-sm rounded bg-orange-500">Coming Soon</p>
+            </div>
+        </div>
+        <div class="player-feature flex flex-col text-sm space-y-1 p-4">
+            <h3 class="player-feature-heading text-base font-medium">Finance Hub</h3>
+            <p class="player-feature-subheading text-sm font-light text-gray-500">Transaction Management</p>
+            <p>Simplify your financial interactions within the handball sphere, from handling entry fees to claiming
+                rewards. Engage responsibly in a credible betting environment, supported by a user-driven trust
+                system.</p>
+            <div class="coming-soon w-24 self-center">
+                <p class="coming-soon-text mt-2 text-white text-sm rounded bg-orange-500">Coming Soon</p>
+            </div>
+        </div>
+    </div>
+    <div class="basis-1/2 space-y-6 mb-10 md:mb-0">
+        <h2 class="player-features-section-header text-3xl font-semibold">Player-Centric Features for NYC’s
+            Competitive
+            Handball Athletes</h2>
+        <p class="player-features-section-description">Players, get ready to experience handball like never before!
+            Game
+            21
+            brings you closer to the action with advanced features designed for Handball Athletes. Whether you’re
+            stepping
+            onto the court for a casual game or competing in a high-stakes tournament, our app is your ultimate
+            handball
+            companion.</p>
+    </div>
+</div>
+
+<!--==============================SUGGESTION FORM==============================-->
+<div class="suggestion-form-section py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
+    <h3 class="text-3xl font-semibold mb-5">Have an Idea for a Feature?</h3>
+    <p class="mb-5">If so, we're open ears to all suggestions.</p>
+    <form class="max-w-sm mx-auto" action="https://formspree.io/f/mnqeqppb" method="POST">
+        <div class="mb-5 flex flex-col">
+            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 self-start">Name</label>
+            <input type="name" id="name" name="name"
+                   class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                   placeholder="name@flowbite.com" required>
+        </div>
+        <div class="mb-5 flex flex-col">
+            <label for="email" class="mb-2 text-sm font-medium text-gray-900 self-start">Email</label>
+            <input type="email" id="email" name="email"
+                   class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                   placeholder="name@flowbite.com" required>
+        </div>
+        <div class="mb-5 flex flex-col">
+            <label for="suggestion" class="mb-2 text-sm font-medium self-start">Let us know what
+                you'd like
+                to see on the app! :)
+            </label>
+            <textarea id="suggestion" rows="4" name="suggestion"
+                      class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
+                      placeholder="Hey, I just thought of something cool for the app: what if we add a feature called [X]? It would basically [Y], which I think is awesome because [Z]..."></textarea>
+        </div>
+        <button type="submit"
+                class="text-white bg-orange-500 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+            Submit your idea
+        </button>
+    </form>
+</div>
+
+<!--==============================FOOTER==============================-->
+<footer>
+    <p class="font-sans p-8 text-start text-xs md:text-center md:text-lg md:p-4">© 2023 Game 21 App. All rights
+        reserved.</p>
+
+</footer>
+</body>
+</html>
