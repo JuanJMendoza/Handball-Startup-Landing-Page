@@ -1,15 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ['./LandingPage/index.html'],
-    theme: {
-        backgroundImage: {
-            hero: "url(resources/HandballCourtImage.jpeg)",
-        },
-        extend: {},
-        fontFamily: {
-            'display': ['Roboto', 'sans-serif']
-        }
+  content: ["./index.html", "./node_modules/flowbite/**/*.js"],
+  theme: {
+    backgroundImage: {
+      hero: "url(resources/HandballCourtImage.jpeg)",
     },
-    plugins: [],
-}
-
+    extend: {},
+    fontFamily: {
+      display: ["Roboto", "sans-serif"],
+    },
+  },
+  plugins: [require("flowbite/plugin")],
+};
