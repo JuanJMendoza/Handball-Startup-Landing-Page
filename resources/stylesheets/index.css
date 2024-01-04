@@ -19,12 +19,16 @@
     background-color: #F6F9F1;
 }
 
+.navbar {
+    background-color: #111826ff;
+}
+
 .navbar-icon {
     width: 3em;
     height: 3em;
     background-color: #111826ff;
 }
 
-.suggestion-form-section, footer {
+.suggestion-form-section {
     background-color: #F6F9F1;
 }
