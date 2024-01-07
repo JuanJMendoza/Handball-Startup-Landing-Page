@@ -11,7 +11,7 @@ function toggleDropdown() {
 function scrollToElement(elementId) {
   const element = document.getElementById(elementId);
   const navbarHeight = document.getElementById("navbar").offsetHeight;
-  console.log(navbarHeight);
+
   window.scrollTo({
     top: element.offsetTop - navbarHeight,
     behavior: "smooth"
@@ -25,7 +25,7 @@ document.querySelectorAll("nav a").forEach(a => {
 
     // Extract elementId from href
     const elementId = this.href.split("#")[1];
-    console.log(elementId);
+
     // Call the scroll function
     scrollToElement(elementId);
   });
