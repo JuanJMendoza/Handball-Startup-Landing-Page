@@ -1,15 +1,3 @@
-// function toggleDropdown() {
-//   const dropdown = document.querySelector("#navbar-default");
-//   const button = document.querySelector("#navbar-dropdown");
-//   const body = document.querySelector("body");
-//
-//   const isExpanded = button.getAttribute("aria-expanded") === "true";
-//   dropdown.classList.toggle("hidden", isExpanded);
-//   button.setAttribute("aria-expanded", (!isExpanded).toString());
-//   dropdown.classList.contains("hidden")
-//     ? body.classList.remove("mt-10")
-//     : body.classList.add("mt-10");
-// }
 let isDropdownHidden = true;
 
 function toggleDropdown() {
@@ -20,4 +8,25 @@ function toggleDropdown() {
   button.setAttribute("aria-expanded", isDropdownHidden);
 }
 
-function openMenu() {}
+function scrollToElement(elementId) {
+  const element = document.getElementById(elementId);
+  const navbarHeight = document.getElementById("navbar").offsetHeight;
+  console.log(navbarHeight);
+  window.scrollTo({
+    top: element.offsetTop - navbarHeight,
+    behavior: "smooth"
+  });
+}
+
+document.querySelectorAll("nav a").forEach(a => {
+  a.addEventListener("click", function(e) {
+    // Prevent default action (jumping to section)
+    e.preventDefault();
+
+    // Extract elementId from href
+    const elementId = this.href.split("#")[1];
+    console.log(elementId);
+    // Call the scroll function
+    scrollToElement(elementId);
+  });
+});
