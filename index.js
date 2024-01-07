@@ -5,7 +5,6 @@ function toggleDropdown() {
   const dropdown = document.getElementById("navbar-default");
   dropdown.classList.toggle("hidden");
   isDropdownHidden = !isDropdownHidden;
-  button.setAttribute("aria-expanded", isDropdownHidden);
 }
 
 function scrollToElement(elementId) {
