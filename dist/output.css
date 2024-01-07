@@ -1962,6 +1962,10 @@ input:checked + .toggle-bg {
     margin-top: 0px;
   }
 
+  .md\:mr-2 {
+    margin-right: 0.5rem;
+  }
+
   .md\:block {
     display: block;
   }
